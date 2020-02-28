@@ -1,0 +1,8 @@
+tasks:
+  - init: go get && go build ./... && go test ./...
+    command: go run
+image:
+  file: .gitpod.Dockerfile
+ports:
+  - port: 2121
+    onOpen: ignore
